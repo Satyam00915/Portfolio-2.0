@@ -2,7 +2,7 @@ import { WobbleCard } from "../Components/UI/WobbleCard";
 
 const About = () => {
   return (
-    <section id="about" className="px-4 sm:px-6 md:px-10">
+    <section id="about" className="relative px-4 sm:px-6 md:px-10">
       <h1 className="text-3xl sm:text-4xl md:text-5xl mt-4 md:mt-10 md:pl-24 saira-font text-white">
         About Me
       </h1>
@@ -26,7 +26,7 @@ const About = () => {
             <img
               src="/image.png"
               alt="linear demo image"
-              className="absolute -right-2 md:-right-[15%] lg:-right-[20%] -bottom-6 w-40 sm:w-56 md:w-72 lg:w-96 object-contain rounded-2xl grayscale"
+              className="absolute -right-2 md:-right-[15%] lg:-right-[30%] -bottom-6 w-40 sm:w-56 md:w-72 lg:w-96 object-contain rounded-2xl grayscale"
             />
           </WobbleCard>
 

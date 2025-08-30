@@ -20,7 +20,7 @@ function App() {
       <div className="relative z-10">
         <Hero />
       </div>
-      <div className="relative z-10 ">
+      <div className="relative z-11 ">
         <About />
       </div>
     </div>
