@@ -1,9 +1,10 @@
 import Particles from "./Components/UI/Particles";
+import About from "./Pages/About";
 import Hero from "./Pages/Hero";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-black relative">
+    <div className="min-h-screen w-screen bg-black relative">
       <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div className="relative z-10">
         <Hero />
+      </div>
+      <div className="relative z-10 ">
+        <About />
       </div>
     </div>
   );

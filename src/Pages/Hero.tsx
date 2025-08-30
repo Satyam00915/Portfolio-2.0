@@ -14,7 +14,7 @@ const Hero = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative flex flex-col items-center gap-3 sm:gap-8 pt-40">
+      <div className="relative flex flex-col mb-8 items-center gap-3 sm:gap-8 pt-40">
         {/* Name */}
         <div className="flex flex-col items-center justify-center">
           <BlurText
@@ -24,13 +24,6 @@ const Hero = () => {
             className="saira-font text-white text-3xl sm:text-6xl"
           />
 
-          {/* Tagline */}
-          {/* <ShinyText
-          text="Full Stack Web Developer"
-          speed={1}
-          disabled={false}
-          className="text-md sm:text-3xl"
-          /> */}
           <div className="text-lg md:text-2xl text-gray-400">
             <Typewriter
               words={["DevOps Enthusiast", "Web3 Explorer", "AI Curious"]}

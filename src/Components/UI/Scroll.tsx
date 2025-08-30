@@ -2,16 +2,16 @@ import { ChevronDown } from "lucide-react";
 
 const ScrollButton = () => {
   const handleScroll = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <button
       onClick={handleScroll}
-      className="flex flex-col items-center gap-3 p-4 group transition-all duration-300 hover:scale-105"
+      className="flex flex-col items-center cursor-pointer gap-3 p-4 group transition-all duration-300 hover:scale-105"
     >
       {/* Text */}
       <span className="text-white/70 text-sm group-hover:text-white transition-colors">
