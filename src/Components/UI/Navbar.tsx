@@ -1,4 +1,4 @@
-import { Cpu, FolderKanban, Home, Info, Projector } from "lucide-react";
+import { Cpu, FolderKanban, Home, Info } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useActiveStore } from "../../store/active";
