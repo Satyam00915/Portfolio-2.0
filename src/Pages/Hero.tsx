@@ -4,7 +4,7 @@ import ShinyText from "../Components/UI/ShinyText";
 import Location from "../Components/UI/Location";
 import Button from "../Components/UI/Button";
 import Skill from "../Components/UI/Skill";
-import { SparklesCore } from "../Components/UI/sparkles";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -13,41 +13,34 @@ const Hero = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative flex flex-col gap-3 sm:gap-0 pt-40">
+      <div className="relative flex flex-col items-center gap-3 sm:gap-8 pt-40">
         {/* Name */}
-        <BlurText
-          text="SATYAM UPADHYAY"
-          direction="top"
-          delay={100}
-          className="saira-font text-white text-3xl sm:text-6xl pl-3 sm:pl-13"
-        />
+        <div className="flex flex-col items-center justify-center">
+          <BlurText
+            text="SATYAM UPADHYAY"
+            direction="top"
+            delay={100}
+            className="saira-font text-white text-3xl sm:text-6xl"
+          />
 
-        {/* Tagline */}
-        <ShinyText
+          {/* Tagline */}
+          {/* <ShinyText
           text="Full Stack Web Developer"
           speed={1}
           disabled={false}
-          className="text-md sm:text-3xl pl-18 sm:pl-34"
-        />
-
-        {/* Decorative sparkles with gradient lines */}
-        <div className="relative hidden sm:block w-[40rem] h-40">
-          <div className="absolute sm:inset-x-20 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute sm:inset-x-20 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
-          <div className="absolute sm:inset-x-60 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-          <div className="absolute sm:-inset-x-20 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-full" />
-
-          <SparklesCore
-            background="transparent"
-            minSize={0.4}
-            maxSize={1}
-            particleDensity={1200}
-            particleColor="#FFFFFF"
-            className="w-full h-full"
-          />
-
-          {/* Mask effect */}
-          <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+          className="text-md sm:text-3xl"
+          /> */}
+          <div className="text-lg md:text-2xl text-gray-400">
+            <Typewriter
+              words={["DevOps Enthusiast", "Web3 Explorer", "AI Curious"]}
+              loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={40}
+              delaySpeed={1500}
+            />
+          </div>
         </div>
 
         {/* Location */}
@@ -110,7 +103,7 @@ const Hero = () => {
         </div>
 
         {/* Skills */}
-        <div className="flex items-center justify-center gap-2 sm:gap-5 mt-5">
+        <div className="flex items-center justify-center gap-2 sm:gap-5 mt-8">
           <Skill text="React" />
           <Skill text="NextJS" />
           <Skill text="Express" />

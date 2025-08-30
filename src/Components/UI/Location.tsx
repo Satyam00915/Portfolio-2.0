@@ -31,6 +31,7 @@ const StyledWrapper = styled.div`
     animation: anm-SL-3-move 1s linear infinite;
     top: 50%;
     left: 50%;
+    background: gray;
     transform: translate(-50%, -50%) rotate(-46deg);
     margin-top: 20px;
   }
