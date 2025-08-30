@@ -8,7 +8,7 @@ import ScrollButton from "../Components/UI/Scroll";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-between">
+    <section id="home" className="flex flex-col items-center justify-between">
       {/* Hero Content */}
       <div className="relative flex flex-col mb-8 items-center gap-3 sm:gap-8 pt-40">
         {/* Name */}
@@ -100,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
       <ScrollButton />
-    </div>
+    </section>
   );
 };
 

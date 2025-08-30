@@ -2,10 +2,12 @@ import Particles from "./Components/UI/Particles";
 import About from "./Pages/About";
 import Hero from "./Pages/Hero";
 import Navbar from "./Components/UI/Navbar";
+import SectionWatcher from "./lib/SectionWatcher";
 
 function App() {
   return (
     <div className="min-h-screen w-screen bg-black relative">
+      <SectionWatcher />
       <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
