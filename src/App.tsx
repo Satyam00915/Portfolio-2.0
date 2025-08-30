@@ -1,6 +1,7 @@
 import Particles from "./Components/UI/Particles";
 import About from "./Pages/About";
 import Hero from "./Pages/Hero";
+import Navbar from "./Components/UI/Navbar";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
           disableRotation={false}
         />
       </div>
+      <Navbar />
       <div className="relative z-10">
         <Hero />
       </div>
-      <div className="relative z-11 ">
+      <div className="relative z-10">
         <About />
       </div>
     </div>

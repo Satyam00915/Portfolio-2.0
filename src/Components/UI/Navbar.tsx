@@ -39,7 +39,7 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar */}
       <div
-        className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 hidden sm:flex"
+        className="fixed top-6 left-1/2 z-50 transform -translate-x-1/2 hidden sm:flex"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

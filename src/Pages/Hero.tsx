@@ -1,4 +1,3 @@
-import Navbar from "../Components/UI/Navbar";
 import BlurText from "../Components/UI/BlurText";
 import ShinyText from "../Components/UI/ShinyText";
 import Location from "../Components/UI/Location";
@@ -10,9 +9,6 @@ import ScrollButton from "../Components/UI/Scroll";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-between">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Hero Content */}
       <div className="relative flex flex-col mb-8 items-center gap-3 sm:gap-8 pt-40">
         {/* Name */}
