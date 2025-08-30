@@ -5,6 +5,7 @@ import Location from "../Components/UI/Location";
 import Button from "../Components/UI/Button";
 import Skill from "../Components/UI/Skill";
 import { Typewriter } from "react-simple-typewriter";
+import ScrollButton from "../Components/UI/Scroll";
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
         </div>
 
         {/* Location */}
-        <div className="flex items-center justify-center pr-12">
+        <div className="flex items-center justify-center gap-5 pr-12">
           <Location />
           <ShinyText
             text="Visakhapatnam, India"
@@ -109,6 +110,7 @@ const Hero = () => {
           <Skill text="Express" />
         </div>
       </div>
+      <ScrollButton />
     </div>
   );
 };

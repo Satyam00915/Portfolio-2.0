@@ -131,10 +131,24 @@ const Particles: React.FC<ParticlesProps> = ({
     resize();
 
     const handleMouseMove = (e: MouseEvent) => {
+      if (!container) return;
+
       const rect = container.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
-      mouseRef.current = { x, y };
+      // Check if mouse is actually within the container
+      const isInside =
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom;
+
+      if (isInside) {
+        const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+        const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+        mouseRef.current = { x, y };
+      } else {
+        // Reset to center when mouse leaves container
+        mouseRef.current = { x: 0, y: 0 };
+      }
     };
 
     if (moveParticlesOnHover) {
