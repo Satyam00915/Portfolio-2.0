@@ -16,7 +16,7 @@ const Hero = () => {
           text="SATYAM UPADHYAY"
           direction="top"
           delay={100}
-          className="sm:text-6xl text-3xl pl-16 sm:pl-13 saira-font text-white"
+          className="sm:text-6xl text-3xl pl-14 sm:pl-13 saira-font text-white"
         />
         <ShinyText
           text="Full Stack Web Developer"
