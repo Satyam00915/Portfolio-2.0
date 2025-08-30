@@ -33,6 +33,8 @@ const Navbar = () => {
     },
   ];
 
+  console.log(isHovered);
+
   return (
     <>
       {/* Desktop Navbar */}
