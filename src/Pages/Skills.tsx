@@ -3,7 +3,6 @@ import {
   FaCss3Alt,
   FaReact,
   FaNodeJs,
-  FaDatabase,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -12,7 +11,6 @@ import {
   SiMongodb,
   SiPrisma,
   SiPostgresql,
-  SiOpenai,
   SiGoogle,
 } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
