@@ -3,6 +3,7 @@ import About from "./Pages/About";
 import Hero from "./Pages/Hero";
 import Navbar from "./Components/UI/Navbar";
 import SectionWatcher from "./lib/SectionWatcher";
+import { Skills } from "./Pages/Skills";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       </div>
       <div className="relative z-10">
         <About />
+      </div>
+      <div className="relative z-10">
+        <Skills />
       </div>
     </div>
   );

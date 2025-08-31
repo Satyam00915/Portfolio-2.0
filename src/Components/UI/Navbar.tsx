@@ -1,6 +1,5 @@
 import { Cpu, FolderKanban, Home, Info } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useActiveStore } from "../../store/active";
 
 const Navbar = () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
     },
     {
       name: "Skills",
-      url: "#",
+      url: "#skills",
       icon: Cpu,
       gradient: "from-green-400 to-emerald-400",
     },
@@ -120,9 +119,9 @@ const Navbar = () => {
               {navItems.map((nav) => {
                 const IconComponent = nav.icon;
                 return (
-                  <Link
+                  <a
                     key={nav.name}
-                    to={nav.url}
+                    href={nav.url}
                     className={`group relative p-3 rounded-xl transition-all duration-300 ${
                       activeItem === nav.name.toLowerCase()
                         ? "scale-110"
@@ -160,7 +159,7 @@ const Navbar = () => {
                         className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-gradient-to-r ${nav.gradient} rounded-full animate-ping`}
                       />
                     )}
-                  </Link>
+                  </a>
                 );
               })}
             </div>
