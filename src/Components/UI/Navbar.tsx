@@ -62,7 +62,7 @@ const Navbar = () => {
                         : "hover:scale-105"
                     }`}
                     onClick={() => {
-                      setActiveItem(nav.name);
+                      setActiveItem(nav.name.toLowerCase());
                       console.log("Navigation clicked:", nav.name);
                     }}
                   >

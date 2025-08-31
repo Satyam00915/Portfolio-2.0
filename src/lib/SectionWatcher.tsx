@@ -19,6 +19,7 @@ const SectionWatcher = () => {
 
         if (mostVisibleId) {
           setActive(mostVisibleId);
+          console.log(mostVisibleId)
         }
       },
       { threshold: 0.6 } // 60% of the section must be visible
