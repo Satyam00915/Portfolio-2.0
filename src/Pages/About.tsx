@@ -3,7 +3,7 @@ import { WobbleCard } from "../Components/UI/WobbleCard";
 const About = () => {
   return (
     <section id="about" className="relative px-4 sm:px-6 md:px-10">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl mt-4 md:mt-10 md:pl-24 saira-font text-white">
+      <h1 className="text-3xl text-center sm:text-4xl md:text-5xl mt-4 md:mt-10 md:pl-24 lg:pl-0 saira-font text-white">
         About Me
       </h1>
 
