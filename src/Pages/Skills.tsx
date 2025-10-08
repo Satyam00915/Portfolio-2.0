@@ -114,7 +114,7 @@ export const Skills = () => {
       <div className="grid w-full text-center mt-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-12">
         {skills.map((skill) => {
           return (
-            <div className="lg:col-span-2 flex flex-col items-center justify-center gap-2 p-6 hover:bg-gray-900 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <div className="lg:col-span-2 flex flex-col items-center justify-center gap-2 p-6 hover:bg-gray-900/70 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
               <skill.icon size={60} className={skill.className} />
               <div className="text-lg font-semibold text-white">
                 {skill.name}
