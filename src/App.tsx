@@ -4,6 +4,7 @@ import Hero from "./Pages/Hero";
 import Navbar from "./Components/UI/Navbar";
 import SectionWatcher from "./lib/SectionWatcher";
 import { Skills } from "./Pages/Skills";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div className="relative z-10">
         <Skills />
+      </div>
+      <div className="relative z-10">
+        <Projects />
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const Navbar = () => {
     },
     {
       name: "Projects",
-      url: "#",
+      url: "#projects",
       icon: FolderKanban,
       gradient: "from-orange-400 to-red-400",
     },
