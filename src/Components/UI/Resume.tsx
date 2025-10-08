@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button = () => {
+const Resume = () => {
   return (
     <StyledWrapper>
       <button>Resume</button>
@@ -61,4 +61,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default Button;
+export default Resume;

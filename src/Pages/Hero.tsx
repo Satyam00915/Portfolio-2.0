@@ -1,6 +1,6 @@
 import BlurText from "../Components/UI/BlurText";
 import ShinyText from "../Components/UI/ShinyText";
-import Button from "../Components/UI/Button";
+import Resume from "../Components/UI/Resume";
 import Skill from "../Components/UI/Skill";
 import { Typewriter } from "react-simple-typewriter";
 import ScrollButton from "../Components/UI/Scroll";
@@ -45,7 +45,7 @@ const Hero = () => {
 
         {/* Button */}
         <div className="flex justify-center items-center text-sm">
-          <Button />
+          <Resume />
         </div>
 
         {/* Social Links */}

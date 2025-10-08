@@ -1,4 +1,48 @@
+import { ProjectCard, type Project } from "@/Components/UI/ProjectCard";
+
 const Projects = () => {
+  const projects: Project[] = [
+    {
+      title: "Personal Portfolio",
+      description:
+        "A performant, responsive portfolio built with Next.js and shadcn/ui.",
+      image: "/portfolio.png",
+      alt: "Preview of personal portfolio website",
+      tags: ["React", "Tailwind", "shadcn/ui"],
+      demoUrl: "https://satyam915-portfolio.vercel.app/",
+      githubUrl: "https://github.com/Satyam00915/Portfolio-2.0",
+    },
+    {
+      title: "NeuroNST",
+      description:
+        "NeuroNest is your intelligent memory vault — capture thoughts, save media, jot notes, set reminders",
+      image: "/neuro.png",
+      alt: "Preview of NeuroNest Website",
+      tags: ["React", "Express", "MongoDB"],
+      demoUrl: "https://neuro-nest-d2fn.vercel.app/",
+      githubUrl: "https://github.com/Satyam00915/NeuroNest",
+    },
+    {
+      title: "Medium Clone",
+      description:
+        "A Medium clone is a blogging platform. Users can sign up and log in, create and publish articles",
+      image: "/medium.png",
+      alt: "Preview of Medium Website",
+      tags: ["React", "NodeJS", "PostgreSQL", "Prisma"],
+      demoUrl: "https://medium-ten-iota.vercel.app/signin",
+      githubUrl: "https://github.com/Satyam00915/Medium",
+    },
+    {
+      title: "Resource Hub",
+      description:
+        "A place to upload and share all of your resources related to any domain.",
+      image: "/hub.png",
+      alt: "Preview of ResourceHub Website",
+      tags: ["React", "Express", "PostgreSQL", "Prisma"],
+      githubUrl: "https://github.com/Satyam00915/ResourceHub-Web",
+    },
+  ];
+
   return (
     <section
       id="projects"
@@ -7,6 +51,12 @@ const Projects = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl mb-10 animate-bounce saira-font text-white">
         My Projects
       </h1>
+
+      <div className="grid w-full max-w-7xl gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((p) => (
+          <ProjectCard key={p.title} project={p} />
+        ))}
+      </div>
     </section>
   );
 };
