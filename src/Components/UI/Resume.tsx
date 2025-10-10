@@ -3,7 +3,13 @@ import styled from "styled-components";
 const Resume = () => {
   return (
     <StyledWrapper>
-      <button>Resume</button>
+      <button
+        onClick={() => {
+          window.open("/Resume.pdf", "_blank");
+        }}
+      >
+        Resume
+      </button>
     </StyledWrapper>
   );
 };
