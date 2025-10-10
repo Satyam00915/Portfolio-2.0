@@ -70,6 +70,7 @@ const Hero = () => {
           </a>
 
           {/* LinkedIn */}
+          
           <a
             target="_blank"
             href="https://www.linkedin.com/in/satyam0915/"
