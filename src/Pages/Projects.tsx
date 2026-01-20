@@ -3,16 +3,6 @@ import { ProjectCard, type Project } from "@/Components/UI/ProjectCard";
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "Personal Portfolio",
-      description:
-        "A performant, responsive portfolio built with Next.js and shadcn/ui.",
-      image: "/portfolio.png",
-      alt: "Preview of personal portfolio website",
-      tags: ["React", "Tailwind", "shadcn/ui"],
-      demoUrl: "https://satyam915-portfolio.vercel.app/",
-      githubUrl: "https://github.com/Satyam00915/Portfolio-2.0",
-    },
-    {
       title: "NeuroNST",
       description:
         "NeuroNest is your intelligent memory vault — capture thoughts, save media, jot notes, set reminders",
